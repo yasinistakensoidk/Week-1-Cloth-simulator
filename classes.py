@@ -1,13 +1,21 @@
 class particle():
-    def __init__(self, parents, children, depth):
+    def __init__(self, x, y, parents=[], children=[], depth=0, velocity = (0, 0), acceleration = (0, 0)):
+       # initialising the neccessary varibales
        self. parents = parents
        self.children = children
        self.depth =  depth
-       self.velocity = (0, 0)
-       self.accelaration = (0, 0)
+       self.position = (x, y)
+       self.velocity = velocity
+       self.accelaration = acceleration
     
     def move(self):
+        # if loses parent, siblings become parents
+        # if loses child, no impact (could have it bounce up but we can add that later)
+        # if loses sibling, no impact (could have it swing a bit)
+        # if particle below moves down, move current particle down depending on chain length (anchor-->tip)
+        # if parent moves down, move current down by same amount
         pass
 
-    def position(self,parents, children): # dijkstras to find the quikest path to an anchor
+    def position(self,parents, children): 
+        # dijkstras to find the quikest path to an anchor to determine its depth
         pass
