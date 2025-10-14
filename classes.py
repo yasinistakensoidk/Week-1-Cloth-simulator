@@ -1,8 +1,10 @@
 class particle():
-    def __init__(self, x, y, parents=[], children=[], depth=0, velocity = (0, 0), acceleration = (0, 0)):
+    def __init__(self, x, y, index, parents=[], children=[], siblings=[], depth=0, velocity = (0, 0), acceleration = (0, 0)):
        # initialising the neccessary varibales
        self. parents = parents
        self.children = children
+       self.siblings = siblings
+       self.index = index
        self.depth =  depth
        self.position = (x, y)
        self.velocity = velocity
@@ -16,6 +18,6 @@ class particle():
         # if parent moves down, move current down by same amount
         pass
 
-    def position(self,parents, children): 
+    def find(self,parents, children): 
         # dijkstras to find the quikest path to an anchor to determine its depth
         pass
