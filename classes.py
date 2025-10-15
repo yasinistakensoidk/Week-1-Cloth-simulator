@@ -8,8 +8,8 @@ class particle():
        self.depth =  depth
        self.position = (x, y)
        self.velocity = velocity
-       self.accelaration = acceleration
-    
+       self.accelaration = acceleration    
+       
     def move(self):
         # if loses parent, siblings become parents
         # if loses child, no impact (could have it bounce up but we can add that later)
