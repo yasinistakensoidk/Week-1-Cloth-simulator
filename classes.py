@@ -27,6 +27,17 @@ class particle():
         # if parent moves up, move current up depending on chain length
         pass
 
-    def find(self,parents, children): 
-        # dijkstras to find the quikest path to an anchor to determine its depth
-        pass
+    def locate(self,Nodes, parents, siblings, children): # {OPTIMISE} dont need dijkstras, depth is just min(Parent_Depth)+1
+        # dijkstras to find the quikest path to an anchor to determine its depth, then we store the path to the nearest anchor in a stack
+        queue = []
+        stack_Full = []
+        stack_Path = []
+        noAnchor = True
+        while noAnchor: # we need to go to the 
+            # We need to analyse all the nodes connected to the first node in the queue:
+            # if we find that a node originates from the first particle then we can throw it either into parents, siblings, or children
+            pass
+            #explore all parents of said node
+
+
+        self.depth = d

@@ -1,3 +1,3 @@
 --READ ME--
 
-This is currently a simulation that runs on my own algorithm which cascades all action up and down
+This is the first project in my 1project a week challenge, inspired by https://youtu.be/nr8biZfSZ3Y?si=sEijcif6KSKhgl4b by carter semrad. This project focuses on cloth simulation, making use of skills such as abstract data types(stacks, queues, graphs), graph traversal(dijkstras algorithm), and recursion. This cloth simulation calculates the effect of each change (cutting of links) manually, and through cascading the effects upwards throughout the entire fabric. I will later implement a version that makes use of Verlet integration and put the 2 simulations side by side so that the realism of my simulation can be assesed
